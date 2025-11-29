@@ -5,6 +5,8 @@
 --%>
 
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="com.vertro.utils.FooterUtils"%>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -332,7 +334,7 @@
 
 <footer>
     <div class="container footer-content">
-        <span>© <%= java.time.Year.now() %> Vertro. Todos los derechos reservados.</span>
+        <span>© <%= FooterUtils.getCurrentYear() %> Vertro. Todos los derechos reservados.</span>
         <span>
             Síguenos en
             <a href="#">Facebook</a> ·
